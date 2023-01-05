@@ -10,3 +10,46 @@
   width: 90vw;
   border: solid grey 2px;
 }
+
+.label, input{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right:20%
+
+}
+
+.form{
+  font-size: 35px ;
+    text-align: center;
+    color: #f3ede9;
+    margin: 0 0 .5vh 0;
+
+}
+
+.submitBtn {
+  margin: 0; 
+  border-radius: 20px 20px; 
+}
+
+.card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}  
+@media (min-width: 600px) {
+  .card-container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .card-container { grid-template-columns: repeat(3, 1fr); }
+}
+.card-item {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #c2c6dd 1px;
+  padding: 5px;
+  display: block;
+}
